@@ -69,6 +69,90 @@
       "city": "12",
       "photo": "C:\\fakepath\\1715319264331.jpg",
       "points": 0
+    },
+    {
+      "id": "af46",
+      "email": "riyasser@gmail.com",
+      "password": "111111111111111111111111111",
+      "name": "YASSIR AIT EL GHARI",
+      "phone": "0679766517",
+      "address": "FOUM OUDI BENI MELLAL MAROC",
+      "birthDate": "2025-01-28",
+      "city": "12",
+      "photo": "C:\\fakepath\\1715319264331.jpg",
+      "points": 0
+    },
+    {
+      "id": "2c23",
+      "email": "aisser@gmail.com",
+      "password": "11111111111",
+      "name": "YASSIR AIT EL GHARI",
+      "phone": "0679766517",
+      "address": "FOUM OUDI BENI MELLAL MAROC",
+      "birthDate": "2025-02-04",
+      "city": "12",
+      "photo": "C:\\fakepath\\1715319264331.jpg",
+      "points": 0
+    },
+    {
+      "id": "67ba",
+      "email": "aaaaaaaaaaaa@ggg.com",
+      "password": "aaaaaaaaaaa",
+      "name": "aaaaaaaaaaa",
+      "phone": "0679766517",
+      "address": "FOUM OUDI BENI MELLAL MAROC",
+      "birthDate": "2025-02-04",
+      "city": "12",
+      "photo": "C:\\fakepath\\com-holi-color-festival-spanish-fork-560-ldaniels-620x411.jpg",
+      "points": 0
+    },
+    {
+      "id": "1f2a",
+      "email": "aitaasser@gmail.com",
+      "password": "aaaaaaaaaaaaaaaa",
+      "name": "YASSIR AIT EL GHARI",
+      "phone": "0679766517",
+      "address": "FOUM OUDI BENI MELLAL MAROC",
+      "birthDate": "2025-02-06",
+      "city": "12",
+      "photo": "C:\\fakepath\\f635897b5a9546aae717783ba84d0ea103982fd0r1-960-538v2_hq.jpg",
+      "points": 0
+    },
+    {
+      "id": "5cef",
+      "email": "aitel@gmail.com",
+      "password": "aaaaaaaaaaaaaaaa",
+      "name": "YASSIR AIT EL GHARI",
+      "phone": "0679766517",
+      "address": "FOUM OUDI BENI MELLAL MAROC",
+      "birthDate": "2025-02-06",
+      "city": "12",
+      "photo": "C:\\fakepath\\1715319264331.jpg",
+      "points": 0
+    },
+    {
+      "id": "a0e9",
+      "email": "aiyasser@gmail.com",
+      "password": "aaaaaaaaaaaaaaaaaaaaaa",
+      "name": "YASSIR AIT EL GHARI",
+      "phone": "0679766517",
+      "address": "FOUM OUDI BENI MELLAL MAROC",
+      "birthDate": "2025-02-04",
+      "city": "12",
+      "photo": "hello",
+      "points": 0
+    },
+    {
+      "id": "f352",
+      "email": "aitelghayasser@gmail.com",
+      "password": "aaaaaaaaaaaaaaaaa",
+      "name": "YASSIR AIT EL GHARI",
+      "phone": "0679766517",
+      "address": "FOUM OUDI BENI MELLAL MAROC",
+      "birthDate": "2025-02-18",
+      "city": "12",
+      "photo": "assets/uploads/1715319264331.jpg",
+      "points": 0
     }
   ],
   "requests": [

@@ -1,17 +1,18 @@
 import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthService } from '../../services/auth.service';
+import { AuthService } from '../services/auth.service';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 @Component({
+  selector: 'app-profile',
   standalone: true,
-  selector: 'app-signup',
-  templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.scss'],
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule], // Add ReactiveFormsModule here
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.css']
 })
-export class SignupComponent {
+export class ProfileComponent {
+
   private authService = inject(AuthService);
   private router = inject(Router);
   form: FormGroup;
@@ -29,12 +30,5 @@ export class SignupComponent {
     });
   }
 
-  signup() {
-    if (this.form.invalid) return;
 
-    const user = { ...this.form.value, points: 0 };
-    this.authService.register(user).subscribe((success) => {
-      if (success) this.router.navigate(['/login']);
-    });
-  }
 }
