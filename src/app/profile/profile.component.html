@@ -6,8 +6,8 @@
         <h1 class="lg:text-3xl md:text-2xl text-xl font-serif font-extrabold mb-2 dark:text-black">
           Profile
         </h1>
-        <h2 class="text-grey text-sm mb-4 dark:text-gray-400">Update Profile</h2>
-        <form [formGroup]="form" (ngSubmit)="update()">
+        <h2 class=" text-sm mb-4 dark:text-gray-400">Update Profile</h2>
+        <form [formGroup]="form" >
           <!-- Profile Image and Cover Image Section -->
           <div class="w-full rounded-sm bg-[url('https://images.unsplash.com/photo-1449844908441-8829872d2607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxob21lfGVufDB8MHx8fDE3MTA0MDE1NDZ8MA&ixlib=rb-4.0.3&q=80&w=1080')] bg-cover bg-center bg-no-repeat items-center">
             <!-- Profile Image -->
@@ -30,15 +30,15 @@
           <div class="flex flex-col lg:flex-row gap-2 justify-center w-full">
             <div class="w-full mb-4 mt-6">
               <label for="" class="mb-2 dark:text-gray-500">Full Name</label>
-              <input [value]="user?.name" type="text" class="mt-2 p-4 w-full border-2 rounded-lg" placeholder="Full Name" formControlName="name" />
+              <input  [value]="user?.name" type="text" class="mt-2 p-4 w-full border-2 rounded-lg" placeholder="Full Name" formControlName="name" />
               <p *ngIf="form.get('name')?.invalid && form.get('name')?.touched" class="text-red-500">
                 Name is required
               </p>
             </div>
             <div class="w-full mb-4 lg:mt-6">
               <label for="" class="dark:text-gray-500">Email</label>
-              <input [value]="user?.email" formControlName="email" type="text" class="mt-2 p-4 w-full border-2 rounded-lg" placeholder="Email" />
-              <p *ngIf="form.get('email')?.invalid && form.get('email')?.touched" class="text-red-500">
+              <input  [value]="user?.email" formControlName="email" type="text" class="mt-2 p-4 w-full border-2 rounded-lg" placeholder="Email" />
+              <p  *ngIf="form.get('email')?.invalid && form.get('name')?.touched" class="text-red-500">
                 Email is required
               </p>
             </div>
@@ -55,21 +55,21 @@
           <div class="flex flex-col lg:flex-row gap-2 justify-center w-full">
             <div class="w-full mb-4 mt-6">
               <label for="" class="mb-2 dark:text-gray-500">Phone Number</label>
-              <input [value]="user?.phone" formControlName="phone" type="text" class="mt-2 p-4 w-full border-2 rounded-lg" placeholder="Phone Number" />
+              <input  [value]="user?.phone" formControlName="phone" type="text" class="mt-2 p-4 w-full border-2 rounded-lg" placeholder="Phone Number" />
               <p *ngIf="form.get('phone')?.invalid && form.get('phone')?.touched" class="text-red-500">
                 Phone number is required
               </p>
             </div>
             <div class="w-full mb-4 lg:mt-6">
               <label for="" class="dark:text-gray-500">Address</label>
-              <input [value]="user?.address" formControlName="address" type="text" class="mt-2 p-4 w-full border-2 rounded-lg" placeholder="Address" />
+              <input  [value]="user?.address" formControlName="address" type="text" class="mt-2 p-4 w-full border-2 rounded-lg" placeholder="Address" />
               <p *ngIf="form.get('address')?.invalid && form.get('address')?.touched" class="text-red-500">
-                Address is required
+                Address is reuired
               </p>
             </div>
             <div class="w-full mb-4 lg:mt-6">
               <label for="" class="dark:text-gray-500">City</label>
-              <input [value]="user?.city" formControlName="city" type="text" class="mt-2 p-4 w-full border-2 rounded-lg" placeholder="City" />
+              <input  formControlName="city" type="text" class="mt-2 p-4 w-full border-2 rounded-lg" placeholder="City" />
               <p *ngIf="form.get('city')?.invalid && form.get('city')?.touched" class="text-red-500">
                 City is required
               </p>
@@ -79,7 +79,7 @@
           <!-- Date of Birth Input -->
           <div class="w-full mb-4 mt-6">
             <label for="" class="mb-2 dark:text-gray-500">Date of Birth</label>
-            <input [value]="user?.birthDate" type="date" class="text-grey p-4 w-full border-2 rounded-lg" formControlName="birthDate" />
+            <input type="date" class="text-grey p-4 w-full border-2 rounded-lg" formControlName="birthDate" />
             <p *ngIf="form.get('birthDate')?.invalid && form.get('birthDate')?.touched" class="text-red-500">
               Date of Birth is required
             </p>
